@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Sign Up form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <div class="sidebar">
+        
+            <div class="strip">
+                <img src="assets/odin-lined.png" alt="odin-logo">
+                <h1>Odin</h1>
+          
+
+            </div>
+
+            <div class="credit">
+                <p>Photo by on heide from <a href="https://unsplash.com/@onheide?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            </div>
+            
+        </div>
+        <div class="form-area">
+
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </br>
+            <p>lets do this</p>
+    </br>
+          <form action="https://httpbin.org/post" method="post">
+
+            <fieldset>
+                <legend>Name</legend>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" placeholder="First name" name="first-name">
+            <label for="last-name">LAST NAME</label>
+       
+           <legend>Contact</legend>
+            <input type="text" id="Last-name" placeholder="Last name" name="last-name">
+        </fieldset>
+        <fieldset>
+            <label for="email">Email </label>
+            <input type="email" id="email" placeholder="Email" name="email">
+            <label for="number">Phone Number</label>
+            <input type="number" id="number" placeholder="Phone number" name="number">
+        </fieldset>
+        <fieldset>
+            <legend>Password</legend>
+           
+            <label for="password" >Password</label>
+            <input type="password" id="password" placeholder="Password" name="password" min="8">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm password" name="confirm-password">
+        </fieldset>
+
+            
+         <button type="submit">Create Account</button>
+        
+        </form>
+
+        <p>Already habe an account?  <a href="#">Sign In</a></p>    
+
+        </div>
+    </main>
     
 </body>
 </html>
