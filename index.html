@@ -23,44 +23,90 @@
             
         </div>
         <div class="form-area">
+            <div class="form-area-content">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+
+                </br>Sign up <em> now</em>   to get started.</p>
+                  </br>
+                  <p>You <em>know </em>you want to</p>
+            </br>
+           
+        </br>
+        </div>
+    
 
            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </br>
-            <p>lets do this</p>
-    </br>
+           
+
+    <div class="form-container">
+        <h2>Lets do this!</h2>
           <form action="https://httpbin.org/post" method="post">
 
-            <fieldset>
-                <legend>Name</legend>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" placeholder="First name" name="first-name">
-            <label for="last-name">LAST NAME</label>
-       
-           <legend>Contact</legend>
-            <input type="text" id="Last-name" placeholder="Last name" name="last-name">
-        </fieldset>
-        <fieldset>
-            <label for="email">Email </label>
-            <input type="email" id="email" placeholder="Email" name="email">
-            <label for="number">Phone Number</label>
-            <input type="number" id="number" placeholder="Phone number" name="number">
-        </fieldset>
-        <fieldset>
-            <legend>Password</legend>
-           
-            <label for="password" >Password</label>
-            <input type="password" id="password" placeholder="Password" name="password" min="8">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" placeholder="Confirm password" name="confirm-password">
-        </fieldset>
-
+            <div class="input-row">
+                <div class="input-container">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" placeholder="First name" name="first-name" required>
+                </div>
+                <div class="input-container">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="Last-name" placeholder="Last name" name="last-name" required>
+                </div>
+            </div>
             
-         <button type="submit">Create Account</button>
+            <div class="input-row">
+                <div class="input-container">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" placeholder="Email" name="email" required>
+            
+                </div>
+                <div class="input-container">
+                    <label for="number">Phone Number</label>
+                    <input type="number" id="number" placeholder="Phone number" name="number" required minlength="10" maxlength="13">
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <div class="input-container">
+                    <label for="password" >Password</label>
+                    <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Password" 
+                    name="password"  
+                    required
+                    minlength="8" 
+                    maxlength="16" 
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}" 
+                    title="Password must be 8-16 characters long, include an uppercase letter, a lowercase letter, a number, and a special character."
+               >
+                    </div>
+                <div class="input-container">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input 
+                    type="password" 
+                    id="confirm-password" 
+                    placeholder="Confirm password" 
+                    name="confirm-password" 
+                    required
+                    pattern=".{8,16}" 
+                    title="Please enter the same password as above."
+            >
+                
+                </div>
+               
+            </div>
+
+        </div>
+        <div class="button-area">
+            <button type="submit">Create Account</button>
         
         </form>
 
-        <p>Already habe an account?  <a href="#">Sign In</a></p>    
+        <p>Already have an account?  <a href="#">Log in</a></p>    
+
+
+        </div>
+         
 
         </div>
     </main>
